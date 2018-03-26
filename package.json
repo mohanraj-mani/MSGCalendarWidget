@@ -1,5 +1,5 @@
 {
-  "name": "@msgctoit/msg-rockettes-calendar",
+  "name": "msg-rockettes-calendar",
   "version": "1.0.0",
   "description": "Calender widget will render day based tickets, show data & seatmap information",
   "main": "index.js",
