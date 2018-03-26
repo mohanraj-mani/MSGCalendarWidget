@@ -1,0 +1,318 @@
+body{
+  background: url(https://www.rockettes.com/wp-content/themes/rockettes/img/xmas/bg-lg-2.jpg) #efebd4 no-repeat fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  background-color: #78909C;
+  letter-spacing: .2px;
+}
+
+.rockettes-calender .top-nav {
+  height: 100%;
+  background: #2d2d2d;
+  padding-left: 38px!important;
+  padding: 15px;
+  z-index: 9;
+  left: 0;
+}
+
+.rockettes-calender .top-nav .container {
+  display: table;
+  margin: 0;
+  table-layout: auto;
+}
+
+.rockettes-calender .top-nav .price-filters {
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 20px;
+  position: relative;
+  width: 400px;
+}
+
+.rockettes-calender .top-nav .price-filters .slider-horizontal {
+    max-width: 200px;
+    width: calc(100% - 230px);
+}
+
+.rockettes-calender .top-nav .price-filters .filter-label {
+  font-size: 18px;
+  color: #fff;
+  font-family: Brandon-Grotesque,sans-serif;
+}
+.rockettes-calender .top-nav .price-filters span {
+  margin-right: 12px;
+  margin-left: 12px;
+  display: inline-block;
+  width: 40px;
+}
+
+.rockettes-calender .top-nav .promocode-input{
+  border: 1px solid;
+  border-color: #c2cfd6;
+  border-radius: .25em;
+  font-size: 1em;
+  background-color: #fff;
+  min-height: 1.5em;
+  padding: 0 .625em;
+  vertical-align: middle;
+}
+
+.rockettes-calender .top-nav .promocode-filterbutton{
+  outline: 0;
+  padding: 10px;
+  font-size: 11px;
+  background: #e2b745;
+  border: 0;
+  margin-top: -4px;
+  text-shadow: none;
+  border-radius: 0;
+  color: #fff;
+  margin-left: 12px;
+}
+
+.rockettes-calender .top-nav .apply-promo {
+  background: 0 0;
+  text-transform: none;
+  outline: 0;
+  text-shadow: none;
+  border: none;
+  cursor: pointer;
+  margin-top: -5px;
+  color: #fff;
+  transition: opacity 1s;
+  opacity: 1;
+}
+
+.rockettes-calender .calendar-widget {
+  display: flex;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.rockettes-calender .calendar-widget .months-container .month {
+  text-align: center;
+}
+
+.rockettes-calender .calendar-widget .months-container .week {
+  width: 100%;
+}
+
+.rockettes-calender .calendar-widget .months-container .month .cell {
+  display: inline-block;
+  width: 12.5%;
+  text-align: center;
+  height: 100px;
+  margin: 3px;
+  border: 1px solid lightgrey;
+  cursor: pointer;
+  transition: all .25s;
+  line-height: 30px;
+  min-width: 114px;
+}
+
+.rockettes-calender .calendar-widget .months-container .month .cell .day-price {
+  display: inline-block;
+  font-size: 10px;
+}
+
+.rockettes-calender .calendar-widget .months-container .month .days-cell {
+  border: none;
+  height: 20px;
+}
+
+.rockettes-calender .calendar-widget .months-container .month .cell:hover {
+  background: tan;
+  opacity: 0.5;
+}
+
+.rockettes-calender .calendar-widget .months-container .month .inactive {
+  pointer-events: none;
+  background: tan;
+  opacity: 0.2;
+  border: 1px solid;
+}
+
+.rockettes-calender .calendar-widget .months-container .month .event-cell {
+  border-style: double;
+  /*border-width: 3px;*/
+}
+
+.rockettes-calender .calendar-widget .months-container .month .visible-cell {
+  visibility: visible;
+}
+
+.rockettes-calender .calendar-widget .months-container .month .hidden-cell {
+  visibility: hidden;
+}
+/*Duplicated*/
+.rockettes-calender .calendar-widget .months-container .cell {
+  display: inline-block;
+  width: 12.5%;
+  text-align: center;
+  height: 100px;
+  margin: 3px;
+  border: 1px solid lightgrey;
+  cursor: pointer;
+  transition: all .25s;
+  line-height: 30px;
+  min-width: 114px;
+}
+
+.rockettes-calender .calendar-widget .months-container .cell .day-price {
+  display: inline-block;
+  font-size: 10px;
+}
+
+.rockettes-calender .calendar-widget .months-container .days-cell {
+  border: none;
+  height: 20px;
+}
+
+.rockettes-calender .calendar-widget .months-container .cell:hover {
+  background: tan;
+  opacity: 0.5;
+}
+
+.rockettes-calender .calendar-widget .months-container .inactive {
+  pointer-events: none;
+  background: tan;
+  opacity: 0.2;
+  border: 1px solid;
+}
+
+.rockettes-calender .calendar-widget .months-container .selected {
+  background: rgba(255,255,255,.4);
+  outline:0;
+}
+
+.rockettes-calender .calendar-widget .months-container .event-cell {
+  border-style: double;
+  /*border-width: 3px;*/
+}
+
+.rockettes-calender .calendar-widget .months-container .visible-cell {
+  visibility: visible;
+}
+
+.rockettes-calender .calendar-widget .months-container .hidden-cell {
+  visibility: hidden;
+}
+
+/**End**/
+.rockettes-calender .calendar-widget ul {
+  list-style-type: none;
+}
+
+.rockettes-calender .calendar-widget .modal.left .modal-dialog,
+.rockettes-calender .calendar-widget .modal.right .modal-dialog {
+    position: fixed;
+    margin: auto;
+    width: 320px;
+    height: 100%;
+    -webkit-transform: translate3d(0%, 0, 0);
+        -ms-transform: translate3d(0%, 0, 0);
+         -o-transform: translate3d(0%, 0, 0);
+            transform: translate3d(0%, 0, 0);
+    position: absolute;
+    right: 12px;
+    z-index: 100;
+  }
+
+.rockettes-calender .calendar-widget .modal.left .modal-content,
+.rockettes-calender .calendar-widget .modal.right .modal-content {
+    overflow-y: auto;
+  }
+
+.rockettes-calender .calendar-widget .modal.left .modal-body,
+.rockettes-calender .calendar-widget .modal.right .modal-body {
+    padding: 15px 15px 80px;
+  }
+
+.rockettes-calender .calendar-widget .modal.right.fade .modal-dialog {
+    right: -320px;
+    -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+       -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+         -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+            transition: opacity 0.3s linear, right 0.3s ease-out;
+  }
+
+.rockettes-calender .calendar-widget .modal.right.fade.in .modal-dialog {
+    right: 0;
+  }
+
+.rockettes-calender .calendar-widget .modal-content {
+  border-radius: 0;
+  border: none;
+  position: relative;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #999;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 6px;
+  outline: 0;
+}
+
+.rockettes-calender .calendar-widget .modal-header {
+  min-height: 16.43px;
+  padding: 15px;
+}
+
+.rockettes-calender .calendar-widget .modal-header button {
+  padding: 0;
+  cursor: pointer;
+  background: 0 0;
+  border: 0;
+  float: right;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  filter: alpha(opacity=20);
+  opacity: .2;
+}
+
+
+.rockettes-calender .inline-block{
+  display: inline-block;
+}
+
+
+.rockettes-calender .rc-slider-handle {
+  border: solid 2px transparent;
+}
+.rockettes-calender .rc-slider-handle:hover {
+  border-color: transparent;
+}
+.rockettes-calender .rc-slider-handle:active {
+  border-color: transparent;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+.rockettes-calender .rc-slider-handle:focus {
+  border-color: transparent;
+  outline: none;
+}
+
+.promo-code-container{
+  position: relative;
+  background: #fff;
+  width: 100%;
+  border: 1px solid #e2b745;
+  padding: 17px 50px 17px 17px;
+  -webkit-box-shadow: 0 0 0 1px #f7f7f7, 0 0 0 2px #e2b745;
+  box-shadow: 0 0 0 1px #f7f7f7, 0 0 0 2px #e2b745;
+}
+
+.promo-confirmation-code-title{
+  color: #c21800;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  display: block;
+}
+
+.promo-confirmation-code-description{
+  color: #333;
+}

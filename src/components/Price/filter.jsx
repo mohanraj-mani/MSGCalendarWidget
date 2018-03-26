@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 import { Range } from 'rc-slider'
-import '../../../node_modules/rc-slider/assets/index.css';
 
 const sliderProps = {
   onSliderChange: PropTypes.func

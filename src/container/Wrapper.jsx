@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import moment from 'moment'
-import Calendar from './Calendar'
-import Sidebar from '../Sidebar'
-import Topbar from '../Topbar'
-import PromocodeConfirmation from '../Promocode/confirmation'
-import HelpfulTips from '../Sidebar/helpfulTips'
-import {helpTips} from '../../data/helpTips.json'
+import Calendar from '../components/Calendar'
+import Sidebar from '../components/Sidebar'
+import Topbar from '../components/Topbar'
+import PromocodeConfirmation from '../components/Promocode/Confirmation'
+import HelpfulTips from '../components/Sidebar/helpfulTips'
+//import {helpTips} from './../data/helpTips.json'
 
 const reduceRawEventsToDayMap = (events, event) => {
   if(events[event.start_date]) {
@@ -193,9 +193,10 @@ class CalendarWrapper extends Component {
               return monthMap[monthKey] && <Calendar {...inputProps} ></Calendar>
             })
         }
-        <HelpfulTips helpTips={helpTips}/>
+
       </div>
     )
   }
 }
+//<HelpfulTips helpTips={helpTips}/>
 export default CalendarWrapper
